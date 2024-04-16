@@ -1,5 +1,5 @@
 <?php
 
 define("DBUSER", "root");
-define("DBPWD", "root");
+define("DBPWD", "");
 define("DBNAME", "taskmngr");
