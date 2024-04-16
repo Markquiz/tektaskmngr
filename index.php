@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+
+<form action="./core/Controllers/AuthController.php" method="POST">
+    <input type="text" name="login">
+    <input type="password" name="password">
+    <button type="submit">логин</button>
+</form>
     
 </body>
 </html>
