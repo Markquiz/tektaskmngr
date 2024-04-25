@@ -12,7 +12,7 @@ class DB{
 
      $name = DBNAME;
 
-     $connection = new PDO("mysql:hosta=localhost; port=3307; dbname=".$name."", $user, $password);
+     $connection = new PDO("mysql:host=localhost; dbname=".$name."", $user, $password);
 
      !$connection ? die("DATABASE_ERROR") : 0;
      

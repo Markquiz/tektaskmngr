@@ -13,31 +13,26 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/static/templates/header.php';
 <style>
 </style>
 
-<form action="./core/Controllers/AuthController.php" method="POST" style="width: 800px; margin-top: 2rem; padding: 15px 30px;">
+<form action="./core/Controllers/AuthController.php" method="POST" style="padding: 10px 20px; margin-top: 0.5rem;">
 
-    <div class="row">
-        <div class="input-field col s6">
-          <input id="login" type="text" name="login" class="validate" style="color: white !important;">
-          <label class="active" for="login">Имя пользователя</label>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="input-field col s6">
-          <input id="password" type="password" name="password" class="validate" style="color: white !important;">
-          <label class="active" for="password">Пароль</label>
-        </div>
-    </div>
-
-    <div class="btn-container" style="padding: 15px 10px;">
-        <button class="btn waves-effect waves-light" type="submit" name="action">Авторизация
-        </button>
-    </div>
-
+<input type="text" name="login" class="p-form-text p-form-no-validate" placeholder="Введите логин">
+<br>
+<input type="password" name="password" class="p-form-text p-form-no-validate" placeholder="Введите пароль">
+<br>
+<button type="submit" class="p-btn p-btn-mob">Войти</button>
 
     
 </form>
 
+<div class="p-modal-background">
+<div class="p-modal" id="example-modal">
+		<h3>Заполните все поля</h3>
+		<div class="p-modal-button-container">
+			<a href="#" data-p-cancel>Ок</a>
+		</div>
+	</div>
+
+</div>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'].'/static/templates/footer.php';  ?>
 

@@ -24,6 +24,8 @@ class UserModel{
             session_start();
 
             $_SESSION['name'] = $userinfo[0];
+            $_SESSION['role'] = $userinfo[8];
+            
             
             Header('Location: /profile');
 
